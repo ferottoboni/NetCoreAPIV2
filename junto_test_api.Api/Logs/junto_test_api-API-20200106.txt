@@ -1,0 +1,624 @@
+===> 2020-01-06 21:22:29.420 -03:00 [Information] Starting web host
+===> 2020-01-06 21:22:29.696 -03:00 [Information] User profile is available. Using '"C:\Users\ferna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-01-06 21:22:29.849 -03:00 [Debug] Reading data from file '"C:\Users\ferna\AppData\Local\ASP.NET\DataProtection-Keys\key-0a472120-1f88-4109-9de8-442eb00cd33d.xml"'.
+===> 2020-01-06 21:22:30.067 -03:00 [Debug] Found key {0a472120-1f88-4109-9de8-442eb00cd33d}.
+===> 2020-01-06 21:22:30.093 -03:00 [Debug] Considering key {0a472120-1f88-4109-9de8-442eb00cd33d} with expiration date 2020-04-02 22:41:24Z as default key.
+===> 2020-01-06 21:22:30.166 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-01-06 21:22:30.170 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-01-06 21:22:30.175 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-01-06 21:22:30.183 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-01-06 21:22:30.188 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-01-06 21:22:30.195 -03:00 [Debug] Using key {0a472120-1f88-4109-9de8-442eb00cd33d} as the default key.
+===> 2020-01-06 21:22:30.196 -03:00 [Debug] Key ring with default key {0a472120-1f88-4109-9de8-442eb00cd33d} was loaded during application startup.
+===> 2020-01-06 21:22:30.643 -03:00 [Information] Startup::Configure
+===> 2020-01-06 21:22:31.069 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-01-06 21:22:31.236 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-01-06 21:22:31.789 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-01-06 21:22:32.439 -03:00 [Debug] An additional 'IServiceProvider' was created for internal use by Entity Framework. An existing service provider was not used due to the following configuration changes: "configuration added for 'Proxies:UseLazyLoadingProxies'".
+===> 2020-01-06 21:22:37.034 -03:00 [Information] Entity Framework Core "3.1.0" initialized '"DBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies "
+===> 2020-01-06 21:22:37.589 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:39.653 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:39.687 -03:00 [Debug] Creating DbCommand for '"ExecuteNonQuery"'.
+===> 2020-01-06 21:22:39.759 -03:00 [Debug] Created DbCommand for '"ExecuteNonQuery"' (65ms).
+===> 2020-01-06 21:22:39.858 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+===> 2020-01-06 21:22:40.060 -03:00 [Information] Executed DbCommand ("290"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+===> 2020-01-06 21:22:40.065 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:40.071 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:40.074 -03:00 [Debug] Creating DbCommand for '"ExecuteScalar"'.
+===> 2020-01-06 21:22:40.074 -03:00 [Debug] Created DbCommand for '"ExecuteScalar"' (0ms).
+===> 2020-01-06 21:22:40.074 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:40.076 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:40.077 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+===> 2020-01-06 21:22:40.232 -03:00 [Information] Executed DbCommand ("155"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+===> 2020-01-06 21:22:40.232 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:40.234 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:40.273 -03:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+===> 2020-01-06 21:22:40.273 -03:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+===> 2020-01-06 21:22:40.273 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:40.273 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:40.274 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+===> 2020-01-06 21:22:40.470 -03:00 [Information] Executed DbCommand ("197"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+===> 2020-01-06 21:22:40.474 -03:00 [Debug] A data reader was disposed.
+===> 2020-01-06 21:22:40.474 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:40.474 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:40.825 -03:00 [Debug] "queryContext => new QueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, bool>, 
+    junto_test_api.Entity.Context.DBContext, 
+    DiagnosticsLogger<Query>
+)
+    .Single()"
+===> 2020-01-06 21:22:40.864 -03:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+===> 2020-01-06 21:22:40.864 -03:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+===> 2020-01-06 21:22:40.864 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:40.865 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:40.865 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Accounts] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:22:41.005 -03:00 [Information] Executed DbCommand ("140"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Accounts] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:22:41.009 -03:00 [Debug] A data reader was disposed.
+===> 2020-01-06 21:22:41.009 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:41.009 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:41.012 -03:00 [Debug] "queryContext => new QueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, bool>, 
+    junto_test_api.Entity.Context.DBContext, 
+    DiagnosticsLogger<Query>
+)
+    .Single()"
+===> 2020-01-06 21:22:41.012 -03:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+===> 2020-01-06 21:22:41.012 -03:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+===> 2020-01-06 21:22:41.012 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:41.013 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:41.013 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Tokens] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:22:41.154 -03:00 [Information] Executed DbCommand ("141"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Tokens] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:22:41.154 -03:00 [Debug] A data reader was disposed.
+===> 2020-01-06 21:22:41.154 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:41.154 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:41.157 -03:00 [Debug] "queryContext => new QueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, bool>, 
+    junto_test_api.Entity.Context.DBContext, 
+    DiagnosticsLogger<Query>
+)
+    .Single()"
+===> 2020-01-06 21:22:41.157 -03:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+===> 2020-01-06 21:22:41.157 -03:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+===> 2020-01-06 21:22:41.158 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:41.158 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:41.158 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:22:41.370 -03:00 [Information] Executed DbCommand ("212"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:22:41.372 -03:00 [Debug] A data reader was disposed.
+===> 2020-01-06 21:22:41.372 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:41.373 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:22:41.376 -03:00 [Debug] '"DBContext"' disposed.
+===> 2020-01-06 21:22:41.554 -03:00 [Debug] Loaded hosting startup assembly "junto_test_api.Api"
+===> 2020-01-06 21:22:41.629 -03:00 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/info  
+===> 2020-01-06 21:22:41.636 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-01-06 21:22:41.874 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-01-06 21:22:41.942 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "junto_test_api.Api.Controllers.InfoController" ("junto_test_api.Api").
+===> 2020-01-06 21:22:41.944 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-01-06 21:22:41.945 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-01-06 21:22:41.946 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-01-06 21:22:41.946 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-01-06 21:22:41.946 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-01-06 21:22:41.950 -03:00 [Debug] Executing controller factory for controller "junto_test_api.Api.Controllers.InfoController" ("junto_test_api.Api")
+===> 2020-01-06 21:22:41.951 -03:00 [Debug] Executed controller factory for controller "junto_test_api.Api.Controllers.InfoController" ("junto_test_api.Api")
+===> 2020-01-06 21:22:41.969 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-01-06 21:22:42.054 -03:00 [Information] Executed action "junto_test_api.Api.Controllers.InfoController.ApiInfo (junto_test_api.Api)" in 101.7542ms
+===> 2020-01-06 21:22:42.057 -03:00 [Information] Request finished in 433.6787ms 200 text/html
+===> 2020-01-06 21:22:43.289 -03:00 [Information] Request starting HTTP/1.1 GET http://localhost:44341/favicon.ico  
+===> 2020-01-06 21:22:43.295 -03:00 [Debug] Request did not match any routes
+===> 2020-01-06 21:22:43.319 -03:00 [Debug] The request path "" does not match the path filter
+===> 2020-01-06 21:22:43.320 -03:00 [Debug] Request did not match any routes
+===> 2020-01-06 21:22:43.323 -03:00 [Information] Request finished in 33.5472ms 404 
+===> 2020-01-06 21:23:43.509 -03:00 [Information] Starting web host
+===> 2020-01-06 21:23:43.641 -03:00 [Information] User profile is available. Using '"C:\Users\ferna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-01-06 21:23:43.678 -03:00 [Debug] Reading data from file '"C:\Users\ferna\AppData\Local\ASP.NET\DataProtection-Keys\key-0a472120-1f88-4109-9de8-442eb00cd33d.xml"'.
+===> 2020-01-06 21:23:43.720 -03:00 [Debug] Found key {0a472120-1f88-4109-9de8-442eb00cd33d}.
+===> 2020-01-06 21:23:43.733 -03:00 [Debug] Considering key {0a472120-1f88-4109-9de8-442eb00cd33d} with expiration date 2020-04-02 22:41:24Z as default key.
+===> 2020-01-06 21:23:43.771 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-01-06 21:23:43.774 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-01-06 21:23:43.776 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-01-06 21:23:43.784 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-01-06 21:23:43.788 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-01-06 21:23:43.795 -03:00 [Debug] Using key {0a472120-1f88-4109-9de8-442eb00cd33d} as the default key.
+===> 2020-01-06 21:23:43.796 -03:00 [Debug] Key ring with default key {0a472120-1f88-4109-9de8-442eb00cd33d} was loaded during application startup.
+===> 2020-01-06 21:23:43.845 -03:00 [Information] Startup::Configure
+===> 2020-01-06 21:23:43.959 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-01-06 21:23:43.974 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-01-06 21:23:44.123 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-01-06 21:23:44.195 -03:00 [Debug] An additional 'IServiceProvider' was created for internal use by Entity Framework. An existing service provider was not used due to the following configuration changes: "configuration added for 'Proxies:UseLazyLoadingProxies'".
+===> 2020-01-06 21:23:45.198 -03:00 [Information] Entity Framework Core "3.1.0" initialized '"DBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies "
+===> 2020-01-06 21:23:45.370 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:46.616 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:46.622 -03:00 [Debug] Creating DbCommand for '"ExecuteNonQuery"'.
+===> 2020-01-06 21:23:46.632 -03:00 [Debug] Created DbCommand for '"ExecuteNonQuery"' (4ms).
+===> 2020-01-06 21:23:46.644 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+===> 2020-01-06 21:23:46.820 -03:00 [Information] Executed DbCommand ("176"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+===> 2020-01-06 21:23:46.823 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:46.831 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:46.835 -03:00 [Debug] Creating DbCommand for '"ExecuteScalar"'.
+===> 2020-01-06 21:23:46.835 -03:00 [Debug] Created DbCommand for '"ExecuteScalar"' (0ms).
+===> 2020-01-06 21:23:46.836 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:46.837 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:46.838 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+===> 2020-01-06 21:23:46.994 -03:00 [Information] Executed DbCommand ("157"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+===> 2020-01-06 21:23:46.994 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:46.996 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:47.033 -03:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+===> 2020-01-06 21:23:47.033 -03:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+===> 2020-01-06 21:23:47.034 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:47.034 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:47.034 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+===> 2020-01-06 21:23:47.174 -03:00 [Information] Executed DbCommand ("139"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+===> 2020-01-06 21:23:47.178 -03:00 [Debug] A data reader was disposed.
+===> 2020-01-06 21:23:47.178 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:47.179 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:47.426 -03:00 [Debug] "queryContext => new QueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, bool>, 
+    junto_test_api.Entity.Context.DBContext, 
+    DiagnosticsLogger<Query>
+)
+    .Single()"
+===> 2020-01-06 21:23:47.455 -03:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+===> 2020-01-06 21:23:47.455 -03:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+===> 2020-01-06 21:23:47.455 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:47.456 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:47.456 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Accounts] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:23:47.596 -03:00 [Information] Executed DbCommand ("140"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Accounts] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:23:47.603 -03:00 [Debug] A data reader was disposed.
+===> 2020-01-06 21:23:47.603 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:47.604 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:47.607 -03:00 [Debug] "queryContext => new QueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, bool>, 
+    junto_test_api.Entity.Context.DBContext, 
+    DiagnosticsLogger<Query>
+)
+    .Single()"
+===> 2020-01-06 21:23:47.608 -03:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+===> 2020-01-06 21:23:47.608 -03:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+===> 2020-01-06 21:23:47.608 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:47.609 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:47.609 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Tokens] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:23:47.751 -03:00 [Information] Executed DbCommand ("142"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Tokens] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:23:47.751 -03:00 [Debug] A data reader was disposed.
+===> 2020-01-06 21:23:47.751 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:47.751 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:47.754 -03:00 [Debug] "queryContext => new QueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, bool>, 
+    junto_test_api.Entity.Context.DBContext, 
+    DiagnosticsLogger<Query>
+)
+    .Single()"
+===> 2020-01-06 21:23:47.754 -03:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+===> 2020-01-06 21:23:47.754 -03:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+===> 2020-01-06 21:23:47.754 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:47.755 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:47.755 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:23:47.895 -03:00 [Information] Executed DbCommand ("140"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:23:47.895 -03:00 [Debug] A data reader was disposed.
+===> 2020-01-06 21:23:47.895 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:47.895 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:23:47.898 -03:00 [Debug] '"DBContext"' disposed.
+===> 2020-01-06 21:23:47.950 -03:00 [Debug] Loaded hosting startup assembly "junto_test_api.Api"
+===> 2020-01-06 21:23:47.995 -03:00 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/info  
+===> 2020-01-06 21:23:48.000 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-01-06 21:23:48.112 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-01-06 21:23:48.162 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "junto_test_api.Api.Controllers.InfoController" ("junto_test_api.Api").
+===> 2020-01-06 21:23:48.163 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-01-06 21:23:48.163 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-01-06 21:23:48.163 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-01-06 21:23:48.164 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-01-06 21:23:48.164 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-01-06 21:23:48.167 -03:00 [Debug] Executing controller factory for controller "junto_test_api.Api.Controllers.InfoController" ("junto_test_api.Api")
+===> 2020-01-06 21:23:48.167 -03:00 [Debug] Executed controller factory for controller "junto_test_api.Api.Controllers.InfoController" ("junto_test_api.Api")
+===> 2020-01-06 21:23:48.173 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-01-06 21:23:48.214 -03:00 [Information] Executed action "junto_test_api.Api.Controllers.InfoController.ApiInfo (junto_test_api.Api)" in 41.5277ms
+===> 2020-01-06 21:23:48.223 -03:00 [Information] Request finished in 232.9764ms 200 text/html
+===> 2020-01-06 21:45:46.599 -03:00 [Information] Starting web host
+===> 2020-01-06 21:45:46.844 -03:00 [Information] User profile is available. Using '"C:\Users\ferna\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+===> 2020-01-06 21:45:46.936 -03:00 [Debug] Reading data from file '"C:\Users\ferna\AppData\Local\ASP.NET\DataProtection-Keys\key-0a472120-1f88-4109-9de8-442eb00cd33d.xml"'.
+===> 2020-01-06 21:45:47.012 -03:00 [Debug] Found key {0a472120-1f88-4109-9de8-442eb00cd33d}.
+===> 2020-01-06 21:45:47.033 -03:00 [Debug] Considering key {0a472120-1f88-4109-9de8-442eb00cd33d} with expiration date 2020-04-02 22:41:24Z as default key.
+===> 2020-01-06 21:45:47.079 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-01-06 21:45:47.083 -03:00 [Debug] Decrypting secret element using Windows DPAPI.
+===> 2020-01-06 21:45:47.086 -03:00 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+===> 2020-01-06 21:45:47.094 -03:00 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+===> 2020-01-06 21:45:47.098 -03:00 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+===> 2020-01-06 21:45:47.105 -03:00 [Debug] Using key {0a472120-1f88-4109-9de8-442eb00cd33d} as the default key.
+===> 2020-01-06 21:45:47.106 -03:00 [Debug] Key ring with default key {0a472120-1f88-4109-9de8-442eb00cd33d} was loaded during application startup.
+===> 2020-01-06 21:45:47.367 -03:00 [Information] Startup::Configure
+===> 2020-01-06 21:45:47.606 -03:00 [Debug] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider", "Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider"]
+===> 2020-01-06 21:45:47.635 -03:00 [Debug] Initializing Razor view compiler with no compiled views.
+===> 2020-01-06 21:45:47.963 -03:00 [Debug] An 'IServiceProvider' was created for internal use by Entity Framework.
+===> 2020-01-06 21:45:48.122 -03:00 [Debug] An additional 'IServiceProvider' was created for internal use by Entity Framework. An existing service provider was not used due to the following configuration changes: "configuration added for 'Proxies:UseLazyLoadingProxies'".
+===> 2020-01-06 21:45:49.909 -03:00 [Information] Entity Framework Core "3.1.0" initialized '"DBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies "
+===> 2020-01-06 21:45:50.414 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:51.798 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:51.807 -03:00 [Debug] Creating DbCommand for '"ExecuteNonQuery"'.
+===> 2020-01-06 21:45:51.822 -03:00 [Debug] Created DbCommand for '"ExecuteNonQuery"' (5ms).
+===> 2020-01-06 21:45:51.838 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+===> 2020-01-06 21:45:52.034 -03:00 [Information] Executed DbCommand ("194"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+===> 2020-01-06 21:45:52.042 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:52.057 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:52.062 -03:00 [Debug] Creating DbCommand for '"ExecuteScalar"'.
+===> 2020-01-06 21:45:52.063 -03:00 [Debug] Created DbCommand for '"ExecuteScalar"' (0ms).
+===> 2020-01-06 21:45:52.063 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:52.065 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:52.066 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+===> 2020-01-06 21:45:52.235 -03:00 [Information] Executed DbCommand ("170"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+===> 2020-01-06 21:45:52.236 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:52.237 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:52.283 -03:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+===> 2020-01-06 21:45:52.284 -03:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+===> 2020-01-06 21:45:52.284 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:52.284 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:52.285 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+===> 2020-01-06 21:45:52.436 -03:00 [Information] Executed DbCommand ("150"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+===> 2020-01-06 21:45:52.442 -03:00 [Debug] A data reader was disposed.
+===> 2020-01-06 21:45:52.442 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:52.443 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:52.858 -03:00 [Debug] "queryContext => new QueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, bool>, 
+    junto_test_api.Entity.Context.DBContext, 
+    DiagnosticsLogger<Query>
+)
+    .Single()"
+===> 2020-01-06 21:45:52.889 -03:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+===> 2020-01-06 21:45:52.889 -03:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+===> 2020-01-06 21:45:52.889 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:52.890 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:52.890 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Accounts] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:45:53.029 -03:00 [Information] Executed DbCommand ("139"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Accounts] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:45:53.034 -03:00 [Debug] A data reader was disposed.
+===> 2020-01-06 21:45:53.034 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:53.034 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:53.040 -03:00 [Debug] "queryContext => new QueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, bool>, 
+    junto_test_api.Entity.Context.DBContext, 
+    DiagnosticsLogger<Query>
+)
+    .Single()"
+===> 2020-01-06 21:45:53.041 -03:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+===> 2020-01-06 21:45:53.041 -03:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+===> 2020-01-06 21:45:53.041 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:53.042 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:53.042 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Tokens] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:45:53.195 -03:00 [Information] Executed DbCommand ("152"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Tokens] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:45:53.196 -03:00 [Debug] A data reader was disposed.
+===> 2020-01-06 21:45:53.197 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:53.198 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:53.207 -03:00 [Debug] "queryContext => new QueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, bool>, 
+    junto_test_api.Entity.Context.DBContext, 
+    DiagnosticsLogger<Query>
+)
+    .Single()"
+===> 2020-01-06 21:45:53.208 -03:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+===> 2020-01-06 21:45:53.208 -03:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+===> 2020-01-06 21:45:53.209 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:53.209 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:53.209 -03:00 [Debug] Executing DbCommand [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:45:53.350 -03:00 [Information] Executed DbCommand ("141"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+===> 2020-01-06 21:45:53.350 -03:00 [Debug] A data reader was disposed.
+===> 2020-01-06 21:45:53.351 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:53.351 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:53.353 -03:00 [Debug] '"DBContext"' disposed.
+===> 2020-01-06 21:45:53.429 -03:00 [Debug] Loaded hosting startup assembly "junto_test_api.Api"
+===> 2020-01-06 21:45:53.492 -03:00 [Information] Request starting HTTP/1.1 GET http://localhost:44341/api/info  
+===> 2020-01-06 21:45:53.496 -03:00 [Debug] Wildcard detected, all requests with hosts will be allowed.
+===> 2020-01-06 21:45:53.652 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Info"'
+===> 2020-01-06 21:45:53.709 -03:00 [Information] Route matched with "{action = \"ApiInfo\", controller = \"Info\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ApiInfo()" on controller "junto_test_api.Api.Controllers.InfoController" ("junto_test_api.Api").
+===> 2020-01-06 21:45:53.711 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-01-06 21:45:53.712 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-01-06 21:45:53.713 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-01-06 21:45:53.713 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-01-06 21:45:53.714 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)", "Microsoft.AspNetCore.Mvc.ProducesAttribute (Order: 0)"]
+===> 2020-01-06 21:45:53.718 -03:00 [Debug] Executing controller factory for controller "junto_test_api.Api.Controllers.InfoController" ("junto_test_api.Api")
+===> 2020-01-06 21:45:53.719 -03:00 [Debug] Executed controller factory for controller "junto_test_api.Api.Controllers.InfoController" ("junto_test_api.Api")
+===> 2020-01-06 21:45:53.729 -03:00 [Information] Executing ContentResult with HTTP Response ContentType of "text/html"
+===> 2020-01-06 21:45:53.788 -03:00 [Information] Executed action "junto_test_api.Api.Controllers.InfoController.ApiInfo (junto_test_api.Api)" in 67.3566ms
+===> 2020-01-06 21:45:53.796 -03:00 [Information] Request finished in 307.4575ms 200 text/html
+===> 2020-01-06 21:45:59.217 -03:00 [Information] Request starting HTTP/1.1 POST http://localhost:44341/api/token application/json 90
+===> 2020-01-06 21:45:59.220 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Token"'
+===> 2020-01-06 21:45:59.249 -03:00 [Information] Route matched with "{action = \"Create\", controller = \"Token\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Create(junto_test_api.Api.Models.CreateTokenModel)" on controller "junto_test_api.Api.Controllers.TokenController" ("junto_test_api.Api").
+===> 2020-01-06 21:45:59.249 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-01-06 21:45:59.249 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-01-06 21:45:59.249 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-01-06 21:45:59.249 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-01-06 21:45:59.250 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-01-06 21:45:59.250 -03:00 [Debug] Executing controller factory for controller "junto_test_api.Api.Controllers.TokenController" ("junto_test_api.Api")
+===> 2020-01-06 21:45:59.549 -03:00 [Debug] Executed controller factory for controller "junto_test_api.Api.Controllers.TokenController" ("junto_test_api.Api")
+===> 2020-01-06 21:45:59.561 -03:00 [Debug] Attempting to bind parameter '"createTokenModel"' of type '"junto_test_api.Api.Models.CreateTokenModel"' ...
+===> 2020-01-06 21:45:59.570 -03:00 [Debug] Attempting to bind parameter '"createTokenModel"' of type '"junto_test_api.Api.Models.CreateTokenModel"' using the name '""' in request data ...
+===> 2020-01-06 21:45:59.573 -03:00 [Debug] Rejected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter"' for content type '"application/json"'.
+===> 2020-01-06 21:45:59.574 -03:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter"' for content type '"application/json"'.
+===> 2020-01-06 21:45:59.732 -03:00 [Debug] Done attempting to bind parameter '"createTokenModel"' of type '"junto_test_api.Api.Models.CreateTokenModel"'.
+===> 2020-01-06 21:45:59.732 -03:00 [Debug] Done attempting to bind parameter '"createTokenModel"' of type '"junto_test_api.Api.Models.CreateTokenModel"'.
+===> 2020-01-06 21:45:59.732 -03:00 [Debug] Attempting to validate the bound parameter '"createTokenModel"' of type '"junto_test_api.Api.Models.CreateTokenModel"' ...
+===> 2020-01-06 21:45:59.739 -03:00 [Debug] Done attempting to validate the bound parameter '"createTokenModel"' of type '"junto_test_api.Api.Models.CreateTokenModel"'.
+===> 2020-01-06 21:45:59.751 -03:00 [Information] Entity Framework Core "3.1.0" initialized '"DBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies "
+===> 2020-01-06 21:45:59.851 -03:00 [Debug] "queryContext => new QueryingEnumerable<Account>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, Account>, 
+    junto_test_api.Entity.Context.DBContext, 
+    DiagnosticsLogger<Query>
+)"
+===> 2020-01-06 21:45:59.861 -03:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+===> 2020-01-06 21:45:59.861 -03:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+===> 2020-01-06 21:45:59.867 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:59.868 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:45:59.877 -03:00 [Debug] Executing DbCommand [Parameters=["@__createTokenViewModel_IntegrationKey_0='?' (Size = 255)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Created], [a].[Modified], [a].[Name], [a].[PublicKey]
+FROM [Accounts] AS [a]
+WHERE [a].[PublicKey] = @__createTokenViewModel_IntegrationKey_0"
+===> 2020-01-06 21:46:00.070 -03:00 [Information] Executed DbCommand ("202"ms) [Parameters=["@__createTokenViewModel_IntegrationKey_0='?' (Size = 255)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Created], [a].[Modified], [a].[Name], [a].[PublicKey]
+FROM [Accounts] AS [a]
+WHERE [a].[PublicKey] = @__createTokenViewModel_IntegrationKey_0"
+===> 2020-01-06 21:46:00.076 -03:00 [Debug] A data reader was disposed.
+===> 2020-01-06 21:46:00.076 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:46:00.076 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:46:00.079 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-01-06 21:46:00.081 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-01-06 21:46:00.082 -03:00 [Debug] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json", "application/problem+xml"]'.
+===> 2020-01-06 21:46:00.083 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/problem+json"' to write the response.
+===> 2020-01-06 21:46:00.083 -03:00 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+===> 2020-01-06 21:46:00.160 -03:00 [Information] Executed action "junto_test_api.Api.Controllers.TokenController.Create (junto_test_api.Api)" in 910.1991ms
+===> 2020-01-06 21:46:00.161 -03:00 [Debug] '"DBContext"' disposed.
+===> 2020-01-06 21:46:00.162 -03:00 [Information] Request finished in 946.3207ms 401 application/problem+json; charset=utf-8
+===> 2020-01-06 21:48:51.382 -03:00 [Information] Request starting HTTP/1.1 POST http://localhost:44341/api/token application/json 89
+===> 2020-01-06 21:48:51.386 -03:00 [Debug] Request successfully matched the route with name 'null' and template '"api/Token"'
+===> 2020-01-06 21:48:51.390 -03:00 [Information] Route matched with "{action = \"Create\", controller = \"Token\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Create(junto_test_api.Api.Models.CreateTokenModel)" on controller "junto_test_api.Api.Controllers.TokenController" ("junto_test_api.Api").
+===> 2020-01-06 21:48:51.390 -03:00 [Debug] Execution plan of "authorization" filters (in the following order): ["None"]
+===> 2020-01-06 21:48:51.391 -03:00 [Debug] Execution plan of "resource" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+===> 2020-01-06 21:48:51.391 -03:00 [Debug] Execution plan of "action" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)", "Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-01-06 21:48:51.391 -03:00 [Debug] Execution plan of "exception" filters (in the following order): ["None"]
+===> 2020-01-06 21:48:51.391 -03:00 [Debug] Execution plan of "result" filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter", "Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)", "Microsoft.AspNetCore.Mvc.ReportApiVersionsAttribute (Order: 0)"]
+===> 2020-01-06 21:48:51.391 -03:00 [Debug] Executing controller factory for controller "junto_test_api.Api.Controllers.TokenController" ("junto_test_api.Api")
+===> 2020-01-06 21:48:51.392 -03:00 [Debug] Executed controller factory for controller "junto_test_api.Api.Controllers.TokenController" ("junto_test_api.Api")
+===> 2020-01-06 21:48:51.393 -03:00 [Debug] Attempting to bind parameter '"createTokenModel"' of type '"junto_test_api.Api.Models.CreateTokenModel"' ...
+===> 2020-01-06 21:48:51.394 -03:00 [Debug] Attempting to bind parameter '"createTokenModel"' of type '"junto_test_api.Api.Models.CreateTokenModel"' using the name '""' in request data ...
+===> 2020-01-06 21:48:51.394 -03:00 [Debug] Rejected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter"' for content type '"application/json"'.
+===> 2020-01-06 21:48:51.394 -03:00 [Debug] Selected input formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter"' for content type '"application/json"'.
+===> 2020-01-06 21:48:51.396 -03:00 [Debug] Done attempting to bind parameter '"createTokenModel"' of type '"junto_test_api.Api.Models.CreateTokenModel"'.
+===> 2020-01-06 21:48:51.396 -03:00 [Debug] Done attempting to bind parameter '"createTokenModel"' of type '"junto_test_api.Api.Models.CreateTokenModel"'.
+===> 2020-01-06 21:48:51.396 -03:00 [Debug] Attempting to validate the bound parameter '"createTokenModel"' of type '"junto_test_api.Api.Models.CreateTokenModel"' ...
+===> 2020-01-06 21:48:51.396 -03:00 [Debug] Done attempting to validate the bound parameter '"createTokenModel"' of type '"junto_test_api.Api.Models.CreateTokenModel"'.
+===> 2020-01-06 21:48:51.468 -03:00 [Information] Entity Framework Core "3.1.0" initialized '"DBContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "using lazy-loading proxies "
+===> 2020-01-06 21:48:51.475 -03:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+===> 2020-01-06 21:48:51.475 -03:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+===> 2020-01-06 21:48:51.476 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:48:51.476 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:48:51.476 -03:00 [Debug] Executing DbCommand [Parameters=["@__createTokenViewModel_IntegrationKey_0='?' (Size = 255)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Created], [a].[Modified], [a].[Name], [a].[PublicKey]
+FROM [Accounts] AS [a]
+WHERE [a].[PublicKey] = @__createTokenViewModel_IntegrationKey_0"
+===> 2020-01-06 21:48:51.631 -03:00 [Information] Executed DbCommand ("154"ms) [Parameters=["@__createTokenViewModel_IntegrationKey_0='?' (Size = 255)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[Created], [a].[Modified], [a].[Name], [a].[PublicKey]
+FROM [Accounts] AS [a]
+WHERE [a].[PublicKey] = @__createTokenViewModel_IntegrationKey_0"
+===> 2020-01-06 21:48:51.707 -03:00 [Debug] Context '"DBContext"' started tracking '"Account"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2020-01-06 21:48:51.744 -03:00 [Debug] A data reader was disposed.
+===> 2020-01-06 21:48:51.744 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:48:51.745 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:48:51.780 -03:00 [Debug] '"DBContext"' generated a temporary value for the '"Id"' property of new '"Token"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2020-01-06 21:48:51.823 -03:00 [Debug] Context '"DBContext"' started tracking '"Token"' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2020-01-06 21:48:51.828 -03:00 [Debug] DetectChanges starting for '"DBContext"'.
+===> 2020-01-06 21:48:51.866 -03:00 [Debug] DetectChanges completed for '"DBContext"'.
+===> 2020-01-06 21:48:51.869 -03:00 [Debug] SaveChanges starting for '"DBContext"'.
+===> 2020-01-06 21:48:51.870 -03:00 [Debug] DetectChanges starting for '"DBContext"'.
+===> 2020-01-06 21:48:51.873 -03:00 [Debug] Unchanged '"Token"."Created"' detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+===> 2020-01-06 21:48:51.877 -03:00 [Debug] Unchanged '"Token"."Modified"' detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+===> 2020-01-06 21:48:51.878 -03:00 [Debug] DetectChanges completed for '"DBContext"'.
+===> 2020-01-06 21:48:51.891 -03:00 [Debug] Opening connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:48:51.892 -03:00 [Debug] Opened connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:48:51.894 -03:00 [Debug] Beginning transaction with isolation level '"Unspecified"'.
+===> 2020-01-06 21:48:52.044 -03:00 [Debug] Began transaction with isolation level '"ReadCommitted"'.
+===> 2020-01-06 21:48:52.115 -03:00 [Debug] Creating DbCommand for '"ExecuteReader"'.
+===> 2020-01-06 21:48:52.115 -03:00 [Debug] Created DbCommand for '"ExecuteReader"' (0ms).
+===> 2020-01-06 21:48:52.118 -03:00 [Debug] Executing DbCommand [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 255), @p4='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Tokens] ([AccountId], [Created], [DueDate], [Key], [Modified])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Tokens]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+===> 2020-01-06 21:48:52.260 -03:00 [Information] Executed DbCommand ("142"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 255), @p4='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Tokens] ([AccountId], [Created], [DueDate], [Key], [Modified])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Tokens]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+===> 2020-01-06 21:48:52.279 -03:00 [Debug] Foreign key property '"Token"."Id"' detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+===> 2020-01-06 21:48:52.285 -03:00 [Debug] A data reader was disposed.
+===> 2020-01-06 21:48:52.287 -03:00 [Debug] Committing transaction.
+===> 2020-01-06 21:48:52.440 -03:00 [Debug] Committing transaction.
+===> 2020-01-06 21:48:52.441 -03:00 [Debug] Closing connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:48:52.442 -03:00 [Debug] Closed connection to database '"junto-test-api"' on server '"ottoboni.database.windows.net"'.
+===> 2020-01-06 21:48:52.444 -03:00 [Debug] Disposing transaction.
+===> 2020-01-06 21:48:52.460 -03:00 [Debug] An '"Token"' entity tracked by '"DBContext"' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+===> 2020-01-06 21:48:52.462 -03:00 [Debug] SaveChanges completed for '"DBContext"' with 1 entities written to the database.
+===> 2020-01-06 21:48:52.464 -03:00 [Debug] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter", "Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+===> 2020-01-06 21:48:52.464 -03:00 [Debug] No information found on request to perform content negotiation.
+===> 2020-01-06 21:48:52.464 -03:00 [Debug] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+===> 2020-01-06 21:48:52.464 -03:00 [Debug] Attempting to select the first formatter in the output formatters list which can write the result.
+===> 2020-01-06 21:48:52.465 -03:00 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"' and content type '"application/json"' to write the response.
+===> 2020-01-06 21:48:52.465 -03:00 [Information] Executing ObjectResult, writing value of type '"junto_test_api.Api.Models.TokenModel"'.
+===> 2020-01-06 21:48:52.472 -03:00 [Information] Executed action "junto_test_api.Api.Controllers.TokenController.Create (junto_test_api.Api)" in 1080.4447ms
+===> 2020-01-06 21:48:52.476 -03:00 [Debug] '"DBContext"' disposed.
+===> 2020-01-06 21:48:52.477 -03:00 [Information] Request finished in 1095.8968ms 200 application/json; charset=utf-8
